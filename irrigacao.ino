@@ -28,7 +28,9 @@ void loop() {
  
  while(leituraUmidade > 600){
    digitalWrite(valvula,LOW); // enquanto estiver seco, ativa a valvula 
-   if()
+   if(digitalRead(sensorMovimento)){ // criar função para executar no periodo de delay
+      Serial.println("Objeto Detectado");
+   }
  }
    
  digitalWrite(valvula,HIGH); // desativa a valvula
